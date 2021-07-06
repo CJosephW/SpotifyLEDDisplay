@@ -11,13 +11,13 @@ This is still very much a work in progress, current works in progress are refres
 1. Refer to this link for setting up your wiring [hzeller's RPI GPIO LED controller]("https://github.com/hzeller/rpi-rgb-led-matrix")
 2. Setup A SpotifyAPI app on Spotify's Developer Dashboard [link](https://developer.spotify.com/dashboard/login) Make sure to setup a redirect uri this will be http://(your raspberry pi's ip):5000/spotify/callback
 3. Setup a Gmail Account for sending the SMS links for spotify verification, make sure to allow less secure apps on your account [link to allow less secure apps on account](https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4NeLEa87kn7oADg8QKET5wKChEr3COo0nkk89SwN6HHzVgdOwI03N70kAUsXH7wKLbJU3xXEblU4fGfSEv59A_ozLKakQ)
-4. Set enviornment variables for 
+4. Set enviornment variables for(in a new .env file) 
     * CLIENTID 
     * CLIENTSECRET
     * SMTP_EMAIL
     * SMTP_EMAIL_PASS
     * REDIRECT URI (set in step two)
-5. set your sms_email in server.py line 98 simply put your number followed by the specified gateway address [link to all gateway addresses](https://kb.sandisk.com/app/answers/detail/a_id/17056/~/list-of-mobile-carrier-gateway-addresses)
+    * MOBILE_SMS_GATEWAY(simply put your number followed by the specified gateway address [link to all gateway addresses](https://kb.sandisk.com/app/answers/detail/a_id/17056/~/list-of-mobile-carrier-gateway-addresses)
 6. install requirements by running ```pip3 install -r requirements.txt``` in the projcects root
 7. Finally run ```python3 server.py``` in the project's root
 
